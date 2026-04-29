@@ -431,17 +431,18 @@
 
     <div class="insight-box">
       <h4>⚡ Instabilidade Massiva de Rede — 16/04/2026</h4>
-      <p>Em 16/04 às 19:24, o atendimento registrou alto volume de reclamações de lentidão em Águas Claras e Taguatinga, com mais de 70 clientes na fila do Opa e 200+ no agente virtual. O CGR Cássio identificou o problema como falha na operadora de trânsito e realizou ajustes de roteamento, com normalização às 20:00. Reflexos do problema foram esperados por aproximadamente 3 dias. O "papa fila" foi ativado para gestão da fila de atendimento. A comunicação foi orientada somente via atendimento — sem divulgação em redes sociais.</p>
+      <p>Em 16/04 às 19:24, o atendimento registrou alto volume de reclamações de lentidão em Águas Claras e Taguatinga, com mais de 70 clientes na fila do Opa e 200+ no agente virtual. O Gestor de redes Cássio identificou o problema como falha na operadora de trânsito e realizou ajustes de roteamento, com normalização às 20:00. Reflexos do problema foram esperados por aproximadamente 3 dias. O "papa fila" foi ativado para gestão da fila de atendimento. A comunicação foi orientada somente via atendimento — sem divulgação em redes sociais.</p>
     </div>
 
     <div class="insight-box">
       <h4>🔧 Operação Bahamas — 07 e 08/04/2026</h4>
-      <p>Uma janela de manutenção programada denominada "Bahamas" foi executada entre os dias 06 e 08 de abril, com início às 00:03 do dia 07/04 e finalização às 04:23. Três manutenções adicionais nos condomínios Beethoven, Alzira Zacarias, Erika Muniz e Firenze foram canceladas para dar foco exclusivo à operação Bahamas. Em 09/04, o CGR Cássio comunicou a migração de todos os assinantes corporativos (B2B) para roteamento separado.</p>
+      <p>Uma janela de manutenção programada denominada "Bahamas" foi executada entre os dias 06 e 08 de abril, com início às 00:03 do dia 07/04 e finalização às 04:23. Três manutenções adicionais nos condomínios Beethoven, Alzira Zacarias, Erika Muniz e Firenze foram canceladas para dar foco exclusivo à operação Bahamas. Em 09/04, o Gestor de redes
+        Cássio com unicou a migração de todos os assinantes corporativos (B2B) para roteamento separado.</p>
     </div>
 
     <div class="insight-box" style="background: linear-gradient(135deg, #fdf4ff 0%, #ede9fe 100%); border-color: #c4b5fd;">
       <h4 style="color: #5b21b6;">🔒 Falha IPv6 — 356 Clientes Afetados (24/04/2026) · Tratado via Canal Privado CGR</h4>
-      <p style="color: #5b21b6;">Este incidente foi identificado e tratado diretamente no canal privado entre o N2 Corporativo e o Gestor de Redes Cássio. Às 09:55 do dia 24/04, o N2 reportou que um grande volume de clientes não conseguia navegar com IPv6 ativo — o único workaround disponível era desativar o protocolo no roteador. Após levantamento interno, foram contabilizados <strong>356 clientes afetados na fila de atendimento</strong>. O CGR Cássio realizou alterações nos anúncios de IPv6 às 12:01, e às 18:03 os testes confirmaram que a resolução por nome estava funcionando. A normalização total foi confirmada às 18:14. A Netflix seguiu sem resposta via IPv6 por limitação própria do serviço, não da rede.</p>
+      <p style="color: #5b21b6;">Este incidente foi identificado e tratado diretamente no canal privado entre o N2 Corporativo e o Gestor de Redes Cássio. Às 09:55 do dia 24/04, o N2 reportou que um grande volume de clientes não conseguia navegar com IPv6 ativo — o único workaround disponível era desativar o protocolo no roteador. Após levantamento interno, foram contabilizados <strong>356 clientes afetados na fila de atendimento</strong>. O Gestor de redes Cássio realizou alterações nos anúncios de IPv6 às 12:01, e às 18:03 os testes confirmaram que a resolução por nome estava funcionando. A normalização total foi confirmada às 18:14. A Netflix seguiu sem resposta via IPv6 por limitação própria do serviço, não da rede.</p>
       <ul style="color: #5b21b6; margin-top: 0.5rem;">
         <li><strong>Causa:</strong> Anúncio IPv6 incorreto na rede — corrigido pelo CGR.</li>
         <li><strong>Impacto:</strong> 356 clientes registrados na fila de atendimento.</li>
@@ -526,7 +527,7 @@ const incidents = [
   { id:25, titulo:"CTO LOS - VCP-CA600 Vicente Pires",        data:"24/04/2026", hora_det:"10:16", hora_sol:"13:29",  duracao:193,  tipo:"Falha de Sinal (LOS)",           local:"VCP-CA600",                     regiao:"Vicente Pires",  impacto:1,   rfo:"Fibra quebrada na caixa de derivação",             status:"Resolvido", os:"529086" },
   { id:26, titulo:"CTO LOS - CA-VVC-D3B Residencial Vivace",  data:"25/04/2026", hora_det:"10:57", hora_sol:"14:37",  duracao:220,  tipo:"Falha de Sinal (LOS)",           local:"CA-VVC-D3B Residencial Vivace", regiao:"Taguatinga",     impacto:1,   rfo:"Não informado",                                   status:"Resolvido", os:"529393" },
   { id:27, titulo:"CTO LOS - SDO-CA130~133 Cruzeiro Center",  data:"28/04/2026", hora_det:"11:23", hora_sol:"16:38",  duracao:315,  tipo:"Rompimento de Cabo",             local:"SDO-CA130/131/132/133 Cruzeiro Center", regiao:"Cruzeiro",  impacto:21,  rfo:"Cabo e drops de clientes cortados",               status:"Resolvido", os:"530085" },
-  { id:28, titulo:"Falha IPv6 — 356 clientes sem navegação",  data:"24/04/2026", hora_det:"09:55", hora_sol:"18:14",  duracao:499,  tipo:"Falha de IPv6",                  local:"Rede geral (tratado via CGR privado)",  regiao:"N/A",       impacto:356, rfo:"Anúncio IPv6 incorreto — corrigido pelo CGR Cássio", status:"Resolvido", os:"—" },
+  { id:28, titulo:"Falha IPv6 — 356 clientes sem navegação",  data:"24/04/2026", hora_det:"09:55", hora_sol:"18:14",  duracao:499,  tipo:"Falha de IPv6",                  local:"Rede geral (tratado via CGR privado)",  regiao:"N/A",       impacto:356, rfo:"Anúncio IPv6 incorreto — corrigido pelo Gestor de redes Cássio", status:"Resolvido", os:"—" },
 ];
 
 const COLORS = {
