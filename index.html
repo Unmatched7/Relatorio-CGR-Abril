@@ -649,7 +649,6 @@ incidents.forEach(i => {
   else if(r.includes('vmware') || r.includes('switch') || r.includes('db') || r.includes('porta')) rfoCategories['Falha de infraestrutura']++;
   else if(r.includes('ipv6') || r.includes('anúncio')) rfoCategories['Falha de IPv6']++;
   else if(r.includes('operadora') || r.includes('trânsito')) rfoCategories['Instabilidade de operadora']++;
-  else if(r.includes('não informado')) rfoCategories['Não identificado']++;
   else rfoCategories['Outros / Sinal']++;
 });
 new Chart(document.getElementById('chartRFO'), {
